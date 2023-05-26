@@ -9,21 +9,22 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
    <children>
-      <AnchorPane prefHeight="841.0" prefWidth="1100.0">
+      <AnchorPane prefHeight="841.0" prefWidth="1100.0" style="-fx-background-color: black;">
          <children>
             <AnchorPane layoutX="583.0" layoutY="34.0" prefHeight="633.0" prefWidth="474.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 22;">
                <children>
-                  <Label layoutX="158.0" layoutY="75.0" text="Login Professor">
+                  <Label layoutX="124.0" layoutY="80.0" text="Cadastro do professor">
                      <font>
                         <Font size="23.0" />
                      </font>
                   </Label>
-                  <Button fx:id="btLogin" layoutX="145.0" layoutY="553.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="186.0" text="login" />
-                  <TextField fx:id="tfLogin" layoutX="124.0" layoutY="241.0" prefHeight="34.0" prefWidth="227.0" promptText="LogIn" style="-fx-background-color: black;" />
-                  <TextField layoutX="124.0" layoutY="308.0" prefHeight="34.0" prefWidth="227.0" promptText="Password" />
+                  <Button fx:id="btLogin" layoutX="144.0" layoutY="541.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="186.0" text="Cadastre-se" />
+                  <TextField fx:id="tfLogin" layoutX="124.0" layoutY="241.0" prefHeight="34.0" prefWidth="227.0" promptText="Nome" />
+                  <TextField fx:id="tflPassword" layoutX="124.0" layoutY="292.0" prefHeight="34.0" prefWidth="227.0" promptText="Password" />
+                  <TextField layoutX="124.0" layoutY="340.0" prefHeight="34.0" prefWidth="227.0" promptText="CPF" />
+                  <TextField layoutX="124.0" layoutY="390.0" prefHeight="34.0" prefWidth="227.0" promptText="Data  " />
                </children>
             </AnchorPane>
             <ImageView fitHeight="526.0" fitWidth="460.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
@@ -31,6 +32,11 @@
                   <Image url="@img/download-removebg-preview.png" />
                </image>
             </ImageView>
+            <Label alignment="CENTER" layoutX="113.0" layoutY="124.0" prefHeight="58.0" prefWidth="347.0" text="Umbrella Academy" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>
