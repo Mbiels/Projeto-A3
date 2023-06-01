@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: black;">
+         <children>
+            <AnchorPane prefHeight="98.0" prefWidth="1100.0" style="-fx-background-color: d9d9d9;">
+               <children>
+                  <ImageView fitHeight="108.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="138.0" layoutY="6.0" prefHeight="63.0" prefWidth="231.0" text="Dimitri">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="138.0" layoutY="56.0" prefHeight="17.0" prefWidth="52.0" text="CPF">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="199.0" fitWidth="111.0" layoutY="-69.0">
+                     <image>
+                        <Image url="@../../../../../../Downloads/I_AM_DEAD_INSIDE__Michael_Scott-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="138.0" layoutY="83.0" prefHeight="27.0" prefWidth="74.0" text="Matéria">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="128.0" fitWidth="159.0" layoutX="946.0" layoutY="1.0">
+                     <image>
+                        <Image url="@img/PIADAS-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="120.0" prefHeight="579.0" prefWidth="206.0" style="-fx-background-color: d9d9d9;">
+               <children>
+                  <Label layoutX="80.0" layoutY="53.0" text="Faltas">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="80.0" layoutY="80.0" text="Notas">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="76.0" layoutY="107.0" text="Salário">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="900.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

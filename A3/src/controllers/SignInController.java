@@ -1,32 +1,24 @@
 package controllers;
 
-import java.io.IOException;
-
-import app.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-public class LoginController {
+public class SignInController {
 
     @FXML
     private Button btLogin;
 
     @FXML
-    private Button btsingIn;
+    private TextField tfLogin;
 
     @FXML
-    private TextField tfLogin;
+    private TextField tflPassword;
 
     @FXML
     void login(ActionEvent event) {
 
-    }
-
-    @FXML
-    void singIn(ActionEvent event) throws IOException {
-       Main.setRoot("singIn");
     }
 
 }
