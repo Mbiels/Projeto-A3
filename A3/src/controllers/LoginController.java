@@ -20,8 +20,8 @@ public class LoginController {
     private TextField tfLogin;
 
     @FXML
-    void login(ActionEvent event) {
-
+    void login(ActionEvent event) throws IOException {
+        Main.setRoot("professor");
     }
 
     @FXML
