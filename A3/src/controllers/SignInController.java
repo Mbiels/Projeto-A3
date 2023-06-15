@@ -17,10 +17,13 @@ public class SignInController {
     private Button btLogin;
 
     @FXML
-    private TextField tfLogin;
+    private TextField tfCpf;
 
     @FXML
-    private TextField tflPassword;
+    private TextField tfData;
+
+    @FXML
+    private TextField tfLogin;
 
     @FXML
     void Sair(ActionEvent event) throws IOException {
@@ -29,8 +32,9 @@ public class SignInController {
 
     @FXML
     void login(ActionEvent event) throws IOException {
-        Main.setRoot("professor");
+        Main.setRoot("professor"); 
     }
 
 }
+
 

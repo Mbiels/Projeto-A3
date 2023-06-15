@@ -20,13 +20,16 @@ public class LoginController {
     private TextField tfLogin;
 
     @FXML
+    private TextField tlfCPF;
+
+    @FXML
     void login(ActionEvent event) throws IOException {
-        Main.setRoot("professor");
+        Main.setRoot("professor"); 
     }
 
     @FXML
     void singIn(ActionEvent event) throws IOException {
-       Main.setRoot("singIn");
+        Main.setRoot("singIn");
     }
 
 }

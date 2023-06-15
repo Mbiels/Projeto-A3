@@ -6,6 +6,8 @@ import app.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
@@ -33,6 +35,15 @@ public class ProfessorController {
     private Button btlRemover;
 
     @FXML
+    private Label lbCpf;
+
+    @FXML
+    private Label lbMateria;
+
+    @FXML
+    private Label lbNome;
+
+    @FXML
     private TextField tfCpf;
 
     @FXML
@@ -45,8 +56,23 @@ public class ProfessorController {
     private TextField tfMensalidade;
 
     @FXML
+    private TableColumn<?, ?> tbcData;
+
+    @FXML
+    private TableColumn<?, ?> tbcID;
+
+    @FXML
+    private TableColumn<?, ?> tbcMateria;
+
+    @FXML
+    private TableColumn<?, ?> tbcNome;
+
+    @FXML
+    private TableColumn<?, ?> tbcSalario;
+
+    @FXML
     void Sair(ActionEvent event) throws IOException {
-       Main.setRoot("login");
+        Main.setRoot("login");
     }
 
     @FXML
@@ -71,7 +97,7 @@ public class ProfessorController {
     }
 
     @FXML
-    void voltar(ActionEvent event) throws IOException {
+    void voltar(ActionEvent event) {
         ancEdit.setVisible(false);
         ancEdit.setDisable(true);
     }
