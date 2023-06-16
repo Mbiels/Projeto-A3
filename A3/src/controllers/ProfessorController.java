@@ -60,9 +60,9 @@ public class ProfessorController {
 
     @FXML
     private TableColumn<?, ?> tbcID;
-
+    
     @FXML
-    private TableColumn<?, ?> tbcMateria;
+    private TableColumn<?, ?> tbcMensalidade;
 
     @FXML
     private TableColumn<?, ?> tbcNome;

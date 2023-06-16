@@ -53,7 +53,7 @@
                   <TableColumn fx:id="tbcNome" prefWidth="169.0" text="CPF" />
                   <TableColumn fx:id="tbcData" prefWidth="132.0" text="Data" />
                   <TableColumn fx:id="tbcMateria" prefWidth="123.0" text="Matéria" />
-                  <TableColumn fx:id="tbcSalario" prefWidth="172.0" text="Salário" />
+                  <TableColumn fx:id="tbcMensalidade" prefWidth="172.0" text="Mensalidade" />
               </columns>
             </TableView>
             <Button fx:id="btlAtualizar" layoutX="256.0" layoutY="636.0" mnemonicParsing="false" onAction="#atualizar" text="Atualizar" />
