@@ -42,6 +42,9 @@ public class ProfessorController {
 
     @FXML
     private Label lbNome;
+    
+    @FXML
+    private Label lbInfoAlunos;
 
     @FXML
     private TextField tfCpf;
@@ -79,11 +82,17 @@ public class ProfessorController {
     void adicionar(ActionEvent event) {
         ancEdit.setVisible(true);
         ancEdit.setDisable(false);
+        lbInfoAlunos.setText("Adcionar novo aluno");
+        btAlterar.setText("Adcionar");
     }
 
     @FXML
     void alterar(ActionEvent event) {
-
+        ancEdit.setVisible(true);
+        ancEdit.setDisable(false);
+        lbInfoAlunos.setText("Editar aluno");
+        btAlterar.setText("Editar");
+        
     }
 
     @FXML
