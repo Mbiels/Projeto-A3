@@ -8,12 +8,22 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import db.DAOAluno;
+import db.DAOFactory;
+import db.DAOProfessor;
+import entities.Professor;
+
 public class Main extends Application {
     private static Scene scene;
+    
+    public static DAOProfessor daoProfessor = DAOFactory.createProfessor();
+    public static DAOAluno daoAluno = DAOFactory.createAluno();
+
+    public static Professor professorLogado;
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("logIn"));
+        scene = new Scene(loadFXML("login"));
         stage.setScene(scene);
         stage.show();
     }

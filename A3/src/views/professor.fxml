@@ -18,26 +18,21 @@
             <AnchorPane prefHeight="98.0" prefWidth="1100.0" style="-fx-background-color: d9d9d9;">
                <children>
                   <ImageView fitHeight="108.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label fx:id="lbNome" layoutX="138.0" layoutY="6.0" prefHeight="63.0" prefWidth="231.0" text="Dimitri">
+                  <Label fx:id="lbNome" layoutX="138.0" layoutY="6.0" prefHeight="63.0" prefWidth="231.0" text="Nome Professor">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lbCpf" layoutX="138.0" layoutY="56.0" prefHeight="17.0" prefWidth="52.0" text="CPF">
+                  <Label fx:id="lbCpf" layoutX="138.0" layoutY="56.0" prefHeight="27.0" prefWidth="206.0" text="CPF">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
                   <ImageView fitHeight="199.0" fitWidth="111.0" layoutY="-69.0">
                      <image>
-                        <Image url="@../../../../../../Downloads/I_AM_DEAD_INSIDE__Michael_Scott-removebg-preview.png" />
+                        <Image url="@img/perfil.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="lbMateria" layoutX="138.0" layoutY="83.0" prefHeight="27.0" prefWidth="74.0" text="Matéria">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
                   <ImageView fitHeight="128.0" fitWidth="159.0" layoutX="946.0" layoutY="1.0">
                      <image>
                         <Image url="@img/PIADAS-removebg-preview.png" />
@@ -46,11 +41,11 @@
                </children>
             </AnchorPane>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="900.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true" />
-            <TableView layoutX="150.0" layoutY="179.0" prefHeight="422.0" prefWidth="806.0">
+            <TableView fx:id="tbAluno" layoutX="150.0" layoutY="179.0" prefHeight="422.0" prefWidth="806.0">
               <columns>
                 <TableColumn fx:id="tbcID" prefWidth="89.0" text="ID" />
                 <TableColumn fx:id="tbcNome" prefWidth="120.0" text="Nome" />
-                  <TableColumn fx:id="tbcNome" prefWidth="169.0" text="CPF" />
+                  <TableColumn fx:id="tbcCpf" prefWidth="169.0" text="CPF" />
                   <TableColumn fx:id="tbcData" prefWidth="132.0" text="Data" />
                   <TableColumn fx:id="tbcMateria" prefWidth="123.0" text="Matéria" />
                   <TableColumn fx:id="tbcMensalidade" prefWidth="172.0" text="Mensalidade" />
@@ -59,24 +54,30 @@
             <Button fx:id="btlAtualizar" layoutX="256.0" layoutY="636.0" mnemonicParsing="false" onAction="#atualizar" text="Atualizar" />
             <Button fx:id="btlRemover" layoutX="794.0" layoutY="636.0" mnemonicParsing="false" onAction="#remover" text="Remover" />
             <Button fx:id="btlAdicionar" layoutX="520.0" layoutY="636.0" mnemonicParsing="false" onAction="#adicionar" text="Adicionar" />
-            <AnchorPane fx:id="ancEdit" layoutX="232.0" layoutY="149.0" prefHeight="318.0" prefWidth="661.0" style="-fx-background-color: d9d9d9;" visible="false">
+            <AnchorPane fx:id="ancEdit" disable="true" layoutX="232.0" layoutY="149.0" prefHeight="318.0" prefWidth="661.0" style="-fx-background-color: d9d9d9;" visible="false">
                <children>
-                  <Label fx:id="lbInfoAlunos" layoutX="82.0" layoutY="14.0" prefHeight="48.0" prefWidth="151.0" text="Alterar dados do Aluno" />
-                  <Label layoutX="80.0" layoutY="89.0" prefHeight="17.0" prefWidth="39.0" text="CPF" />
-                  <Label layoutX="82.0" layoutY="130.0" prefHeight="17.0" prefWidth="52.0" text="Curso" />
-                  <Label layoutX="72.0" layoutY="175.0" text="Data de nascimento" />
-                  <Button fx:id="btAlterar" layoutX="233.0" layoutY="253.0" mnemonicParsing="false" onAction="#alterar" text="Alterar" />
-                  <Label layoutX="404.0" layoutY="175.0" text="mensalidade" />
-                  <TextField fx:id="tfCpf" layoutX="133.0" layoutY="85.0" />
-                  <TextField fx:id="tfCurso" layoutX="133.0" layoutY="126.0" />
-                  <TextField fx:id="tfMensalidade" layoutX="483.0" layoutY="171.0" prefHeight="25.0" prefWidth="111.0" />
-                  <TextField fx:id="tfDate" layoutX="193.0" layoutY="171.0" />
-                  <Button fx:id="btVoltar" layoutX="356.0" layoutY="253.0" mnemonicParsing="false" onAction="#voltar" prefHeight="25.0" prefWidth="52.0" text="Voltar" />
+                  <Label fx:id="lbInfoAlunos" alignment="CENTER" layoutX="152.0" layoutY="14.0" prefHeight="48.0" prefWidth="409.0" text="Alterar dados do Aluno">
+                     <font>
+                        <Font size="28.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="182.0" layoutY="109.0" prefHeight="17.0" prefWidth="111.0" text="CPF:" />
+                  <Label alignment="CENTER_RIGHT" layoutX="186.0" layoutY="142.0" prefHeight="25.0" prefWidth="111.0" text="Curso:" />
+                  <Label alignment="TOP_RIGHT" layoutX="183.0" layoutY="214.0" prefHeight="17.0" prefWidth="117.0" text="Data de nascimento:" />
+                  <Button fx:id="btSave" layoutX="238.0" layoutY="266.0" mnemonicParsing="false" onAction="#save" text="Alterar" />
+                  <Label alignment="CENTER_RIGHT" layoutX="183.0" layoutY="179.0" prefHeight="17.0" prefWidth="117.0" text="Mensalidade:" />
+                  <TextField fx:id="tfCpf" layoutX="302.0" layoutY="105.0" />
+                  <TextField fx:id="tfCurso" layoutX="302.0" layoutY="140.0" />
+                  <TextField fx:id="tfMensalidade" layoutX="302.0" layoutY="175.0" prefHeight="25.0" prefWidth="149.0" />
+                  <TextField fx:id="tfDate" layoutX="302.0" layoutY="210.0" />
+                  <Button fx:id="btVoltar" layoutX="357.0" layoutY="266.0" mnemonicParsing="false" onAction="#voltar" prefHeight="25.0" prefWidth="52.0" text="Voltar" />
                   <ImageView fitHeight="63.0" fitWidth="63.0" layoutY="-2.0">
                      <image>
                         <Image url="@../../bin/views/img/PIADAS-removebg-preview.png" />
                      </image>
                   </ImageView>
+                  <Label fx:id="lbMsgError" alignment="CENTER" layoutX="194.0" layoutY="241.0" prefHeight="17.0" prefWidth="264.0" />
+                  <TextField fx:id="tfNome" layoutX="302.0" layoutY="70.0" />
+                  <Label alignment="CENTER_RIGHT" layoutX="186.0" layoutY="76.0" prefHeight="17.0" prefWidth="111.0" text="Nome:" />
                </children>
             </AnchorPane>
             <Button fx:id="btDeslogar" layoutX="27.0" layoutY="649.0" mnemonicParsing="false" onAction="#Sair" text="X" />
