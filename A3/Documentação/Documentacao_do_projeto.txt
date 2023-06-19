@@ -1,0 +1,57 @@
+﻿Projeto Umbrella Academy - A3
+ 
+⋄ Sobre o projeto
+
+
+        O tema escolhido pelo foi foi o desenvolvimento de um sistema para gerenciamento de alunos de uma escola. Para que isso aconteça é necessário o cadastro de um professor, e sua validação através de seus dados (Nome, Cpf e idade), e cadastros de alunos realizado pelo professor, onde o mesmo poderá adicionar novos alunos e seus dados (Nome, Idade, Curso, Cpf e mensalidade), podendo também alterar e excluir alunos. 
+
+
+⋄ Regras para o funcionamento da aplicação 
+
+
+        Para que um professor possa ser cadastrado ao banco, é necessário que o CPF seja válido e que sua idade não ultrapasse 120 anos, caso um desses dois requisitos não seja atendido o professor não será cadastrado, onde será mostrado um aviso para que os dados inseridos sejam válidos. O mesmo ocorre na hora de cadastrar um aluno, o código irá analisar se o Cpf e idade do alunos são válidos e se já possui algum aluno com aquele Cpf cadastrado, se tiver algum aluno com o mesmo Cpf ou com algum dado preenchido de forma incorreta será mostrado um aviso na tela.  
+        A aplicação também possui a função de editar os dados de um aluno já existente ou excluir um aluno selecionado pelo professor. 
+        
+⋄ Requisitos funcionais
+
+
+* Cadastrar Professor:
+   * Nome:
+      * Caso não seja inserido o nome, o programa exibe um alerta para que todos os campos sejam preenchidos.
+   * Cpf:
+      * É necessário que um cpf válido seja inserido, caso o Cpf não seja válido um alerta é exibido pedindo um Cpf válido.
+      * Se o campo não for preenchido o alerta para que todos os campos sejam preenchidos irá aparecer.
+   * Idade:
+      * A aplicação analisa se o professor não possui mais de 120 anos, caso seja verdadeiro o professor é cadastrado no bando, se não, o alerta será exibido na tela.
+      * Se o campo não for preenchido o alerta para que todos os campos sejam preenchidos irá aparecer.
+
+
+* Cadastrar Aluno:
+   * Nome:
+      * Caso não seja inserido o nome, o programa exibe um alerta para que todos os campos sejam preenchidos.
+   * Cpf:
+      * É necessário que um cpf válido seja inserido, caso o Cpf não seja válido um alerta é exibido pedindo um Cpf válido.
+      * Se o campo não for preenchido o alerta para que todos os campos sejam preenchidos irá aparecer.
+      * Caso um aluno já esteja cadastrado com o Cpf digitando o programa exibe um alerta de que o aluno já foi cadastrado.
+   * Idade:
+      * A aplicação analisa se o professor não possui mais de 120 anos, caso seja verdadeiro o professor é cadastrado no bando, se não, o alerta será exibido na tela.
+      * Se o campo não for preenchido o alerta para que todos os campos sejam preenchidos irá aparecer.
+   * Mensalidade: 
+      * Se o campo não for preenchido o alerta para que todos os campos sejam preenchidos irá aparecer.
+   * Curso:
+      * Se o campo não for preenchido o alerta para que todos os campos sejam preenchidos irá aparecer.
+* Editar Aluno:
+   * Permite que todas as informações do aluno selecionado sejam editadas, tanto no banco como na tabela exibida na tela da aplicação.
+* Excluir Aluno:
+   * Permite excluir o aluno selecionado, deletado do banco e da tabela.
+
+
+⋄ Requisitos não funcionais
+
+
+* A aplicação é feita inicialmente para ser utilizada no sistema windows.
+* A conexão com o banco de dados é feita através do jdbc.
+* O banco de dados utilizado é o MySQL Workbench
+* Inicialmente só pode ser executado em computadores.
+* O sistema possui uma função para analisar se o Cpf é válido ou se já possui alguém cadastrado com aquele Cpf.
+* Os dados dos alunos podem ser alterados pelo professor dentro do programa e eles serão alterados automaticamente no banco de dados.
